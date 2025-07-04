@@ -4,8 +4,88 @@
     box-sizing: border-box;
 }
 
+body {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
 
+form {
+    background-color: whitesmoke;
+    min-height: 600px;
+    width: 40vw;
+}
+
+form *> {
+    margin-left: 5px;
+}
 
 .logo {
+    
+   /* position: absolute;
+    top: 150px;*/
+    width: 50px;
+    /*left: 100px;*/
+    
+    
+}
+
+.logo-container {
     background-color: black;
+    position: fixed;
+    top: 150px;
+    left: 55px;
+    min-width: max(25vw, 150px);
+    text-align: center;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: whitesmoke;
+}
+
+.aside {
+    
+    min-height: 600px;
+    min-width: max(25vw, 150px);
+}
+
+.plant-container {
+    position: relative;
+    margin-left: 15px;
+}
+
+p {
+    width: clamp(45ch, 90%, 60ch);
+}
+
+
+.user-info {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: white;
+}
+
+.first-name, .last-name, .mail, .phone, .password, 
+.confirm-password {
+    display: flex;
+    flex-direction: column;
+    /*justify-content: space-between;*/
+    margin-top: 15px;
+
+}
+
+.first-name input, .last-name input, .mail input, .phone input, .password input, 
+.confirm-password input {
+    border-radius: 3px;
+    padding: 3px;
+}
+
+.first-name, .mail, .password{
+    margin-right: 70px;
+
 }
