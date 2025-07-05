@@ -8,6 +8,7 @@ body {
     display: flex;
     justify-content: center;
     background-color: black;
+    
 }
 
 form {
@@ -16,8 +17,8 @@ form {
     width: 40vw;
 }
 
-form *> {
-    margin-left: 5px;
+form > div {
+   /*margin-left: 40px;*/
 }
 
 .logo {
@@ -28,14 +29,16 @@ form *> {
     /*left: 100px;*/
     
     
+    
 }
 
 .logo-container {
     background-color: black;
-    position: fixed;
-    top: 150px;
-    left: 55px;
-    min-width: max(25vw, 150px);
+    opacity: 0.5;
+    position: absolute;
+    top: 100px;
+    left: 0px;
+    min-width: max(23vw, 150px);
     text-align: center;
     min-height: 100px;
     display: flex;
@@ -44,30 +47,59 @@ form *> {
 }
 
 h1 {
-    color: whitesmoke;
+    color: white;
+    font-weight: 900px;
 }
 
 .aside {
     
     min-height: 600px;
-    min-width: max(25vw, 150px);
+    min-width: max(23vw, 150px);
 }
 
-.plant-container {
+.aside-container {
     position: relative;
-    margin-left: 15px;
 }
 
 p {
     width: clamp(45ch, 90%, 60ch);
 }
 
+div.intro {
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.intro > p {
+    margin-top: 30px;
+    font-size: 1rem;
+    font-weight: 900px;
+}
 
 .user-info {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     background-color: white;
+    padding-bottom: 30px;
+    border-bottom: 20px solid;
+}
+
+.start {
+    background-color: white;
+    margin-bottom: 0;
+}
+
+.start p { 
+    font-size: 1rem;
+    margin-left: 30px;
+    padding-top: 10px;
+    font-weight: 900px;
+}
+
+label {
+    font-size: 0.5rem;
+    font-weight: 900px;
 }
 
 .first-name, .last-name, .mail, .phone, .password, 
@@ -76,16 +108,44 @@ p {
     flex-direction: column;
     /*justify-content: space-between;*/
     margin-top: 15px;
+    /*margin-left: 30px;*/
 
+}
+
+.first-name, .mail, .password, .intro, .button, 
+.login {
+    margin-left: 30px;
 }
 
 .first-name input, .last-name input, .mail input, .phone input, .password input, 
 .confirm-password input {
     border-radius: 3px;
     padding: 3px;
+    border: 1px solid #E5E7EB;
+}
+
+input:focus {
+    border: 1px solid yellow;
 }
 
 .first-name, .mail, .password{
-    margin-right: 70px;
+    margin-right: 40px;
 
+}
+
+button[type="submit"] {
+    background-color: #596D48;
+    margin-top: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    width: 150px;
+    color: white;
+}
+
+.login {
+    margin-top: 20px;
+}
+
+.password input:invalid, .confirm-password input:invalid {
+    border-color: red;
 }
