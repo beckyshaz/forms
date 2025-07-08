@@ -41,7 +41,7 @@ form {
     
    /* position: absolute;
     top: 150px;*/
-    width: 50px;
+    width: 70px;
     /*left: 100px;*/
     
     
@@ -65,6 +65,8 @@ h1 {
 
     font-family: "Norse Bold";
     color: white;
+    font-size: 3rem;
+    word-spacing: 15px;
 }
 
 .aside {
