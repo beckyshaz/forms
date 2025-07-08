@@ -5,7 +5,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Sign-up Form</title>
         <link rel="stylesheet" href="./styles.css">
-    </head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/mo4v55" type="text/css"/>
+        <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/lovematrix" type="text/css"/>
+    <style>
+        body {
+            font-family: "Roboto" "san serif";
+        }
+    </style>
     <body>
         <div class="aside-container">
             <img class="aside" src="./halie-west-25xggax4bSA-unsplash.jpg" alt="beautiful picture of green leaves" width="200px">
@@ -32,15 +41,15 @@
                 
                 <div class="first-name">
                     <label for="first-name">FIRST NAME</label>
-                    <input type="text" id="first-name" name="first-name">
+                    <input type="text" id="first-name" name="first-name" required>
                 </div>
                 <div class="last-name">
                     <label for="last-name">LAST NAME</label>
-                    <input type="text" id="last-name" name="last-name">
+                    <input type="text" id="last-name" name="last-name" required>
                 </div>
                 <div class="mail">
                     <label for="mail">EMAIL</label>
-                    <input type="email" id="mail" name="mail">
+                    <input type="email" id="mail" name="mail" required placeholder="example@gmail.com">
                 </div>
                 <div class="phone">
                     <label for="phone-number">PHONE NUMBER</label>
@@ -48,18 +57,18 @@
                 </div>
                 <div class="password">
                     <label for="password">PASSWORD</label>
-                    <input type="password" name="password" id="password">
+                    <input type="password" name="password" id="password" required>
                 </div>
                 <div class="confirm-password">
                     <label for="confirm-password">CONFIRM PASSWORD</label>
-                    <input type="password" id="confirm-password" name="confirm-password">
+                    <input type="password" id="confirm-password" name="confirm-password" required>
                 </div>
             </div>
                 
             <div class="button">
                 <button type="submit">Create Account</button>
             </div>
-            <p class="login">Already have an account? Log in</p>
+            <p class="login">Already have an account? <span>Log in</span></p>
             
         </form>
     </body>
